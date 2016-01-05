@@ -26,6 +26,14 @@ syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
 syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 
 syntax keyword pyNiceStatement lambda conceal cchar=λ
+syntax keyword pyNiceStatement sigma conceal cchar=σ
+syntax keyword pyNiceStatement gamma conceal cchar=γ
+syntax keyword pyNiceStatement mu conceal cchar=μ
+syntax keyword pyNiceStatement tau conceal cchar=τ
+syntax keyword pyNiceStatement rho conceal cchar=ρ
+syntax keyword pyNiceStatement epsilon conceal cchar=ε
+syntax keyword pyNiceStatement theta conceal cchar=θ
+syntax keyword pyNiceStatement phi conceal cchar=φ
 
 hi link pyNiceOperator Operator
 hi link pyNiceStatement Statement
