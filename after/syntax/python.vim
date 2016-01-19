@@ -22,8 +22,11 @@ syntax match pyNiceOperator "=\@<!===\@!" conceal cchar=≡
 syntax match pyNiceOperator "!=" conceal cchar=≢
 
 syntax keyword pyNiceOperator sum conceal cchar=∑
+syntax keyword pyNiceBuiltin all conceal cchar=∀
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
 syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
+syntax match pyNiceOperator "\<\%(math\.\|\)ceil\>" conceal cchar=⌈
+syntax match pyNiceOperator "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 syntax keyword pyNiceStatement sigma conceal cchar=σ
@@ -34,10 +37,19 @@ syntax keyword pyNiceStatement rho conceal cchar=ρ
 syntax keyword pyNiceStatement epsilon conceal cchar=ε
 syntax keyword pyNiceStatement theta conceal cchar=θ
 syntax keyword pyNiceStatement phi conceal cchar=φ
+syntax keyword pyNiceStatement None conceal cchar=∅
+
+syntax match pyNiceOperator " \* " conceal cchar=∙
+syntax match pyNiceOperator " / " conceal cchar=÷
+" The following are special cases where it /may/ be okay to ignore PEP8
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)2\>" conceal cchar=²
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)3\>" conceal cchar=³
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)n\>" conceal cchar=ⁿ
 
 hi link pyNiceOperator Operator
 hi link pyNiceStatement Statement
 hi link pyNiceKeyword Keyword
+hi link pyNiceBuiltin Builtin
 hi! link Conceal Operator
 
 setlocal conceallevel=1
