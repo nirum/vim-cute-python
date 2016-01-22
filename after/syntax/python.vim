@@ -28,10 +28,6 @@ syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 syntax match pyNiceOperator "\<\%(math\.\|\)ceil\>" conceal cchar=⌈
 syntax match pyNiceOperator "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
-syntax keyword pyNiceStatement int conceal cchar=ℤ
-syntax keyword pyNiceStatement float conceal cchar=ℝ
-syntax keyword pyNiceStatement complex conceal cchar=ℂ
-
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 syntax keyword pyNiceStatement sigma conceal cchar=σ
 syntax keyword pyNiceStatement gamma conceal cchar=γ
