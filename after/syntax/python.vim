@@ -25,6 +25,7 @@ syntax keyword pyNiceOperator sum conceal cchar=∑
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
 syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 
+syntax keyword pyNiceStatement alpha conceal cchar=⍺
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 syntax keyword pyNiceStatement sigma conceal cchar=σ
 syntax keyword pyNiceStatement gamma conceal cchar=γ
