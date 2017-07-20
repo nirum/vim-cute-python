@@ -8,7 +8,7 @@ syntax clear pythonOperator
 
 syntax match pythonOperator "\<is\>"
 
-syntax match pyNiceOperator "\<in\>" conceal cchar=∈
+syntax match pyNiceOperator "\<in\>" conceal cchar=ϵ
 syntax match pyNiceOperator "\<or\>" conceal cchar=∨
 syntax match pyNiceOperator "\<and\>" conceal cchar=∧
 " include the space after “not” – if present – so that “not a” becomes “¬a”.
@@ -26,28 +26,28 @@ syntax keyword pyNiceOperator prod conceal cchar=𝚷
 syntax keyword pyNiceOperator gradient conceal cchar=𝛁
 
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
-syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=𝛑
+syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 
-syntax keyword pyNiceStatement alpha conceal cchar=𝛂
-syntax keyword pyNiceStatement beta conceal cchar=𝛃
-syntax keyword pyNiceStatement delta conceal cchar=𝛅
-syntax keyword pyNiceStatement eta conceal cchar=𝛈
-syntax keyword pyNiceStatement lambda conceal cchar=𝛌
-syntax keyword pyNiceStatement sigma conceal cchar=𝛔
-syntax keyword pyNiceStatement gamma conceal cchar=𝛄
-syntax keyword pyNiceStatement mu conceal cchar=𝛍
-syntax keyword pyNiceStatement nu conceal cchar=𝛎
-syntax keyword pyNiceStatement tau conceal cchar=𝛕
-syntax keyword pyNiceStatement rho conceal cchar=𝛒
-syntax keyword pyNiceStatement epsilon conceal cchar=𝛜
-syntax keyword pyNiceStatement theta conceal cchar=𝛉
-syntax keyword pyNiceStatement kappa conceal cchar=𝛋
-syntax keyword pyNiceStatement phi conceal cchar=𝛟
-syntax keyword pyNiceStatement omega conceal cchar=𝛚
-syntax keyword pyNiceStatement zeta conceal cchar=𝛇
-syntax keyword pyNiceStatement xi conceal cchar=𝛏
-syntax keyword pyNiceStatement chi conceal cchar=𝛘
-syntax keyword pyNiceStatement psi conceal cchar=𝛙
+syntax keyword pyNiceStatement alpha conceal cchar=α
+syntax keyword pyNiceStatement beta conceal cchar=β
+syntax keyword pyNiceStatement delta conceal cchar=δ
+syntax keyword pyNiceStatement eta conceal cchar=η
+syntax keyword pyNiceStatement lambda conceal cchar=λ
+syntax keyword pyNiceStatement sigma conceal cchar=σ
+syntax keyword pyNiceStatement gamma conceal cchar=γ
+syntax keyword pyNiceStatement mu conceal cchar=μ
+syntax keyword pyNiceStatement nu conceal cchar=ν
+syntax keyword pyNiceStatement tau conceal cchar=τ
+syntax keyword pyNiceStatement rho conceal cchar=ρ
+syntax keyword pyNiceStatement epsilon conceal cchar=ε
+syntax keyword pyNiceStatement theta conceal cchar=ϑ
+syntax keyword pyNiceStatement kappa conceal cchar=κ
+syntax keyword pyNiceStatement phi conceal cchar=φ
+syntax keyword pyNiceStatement omega conceal cchar=ω
+syntax keyword pyNiceStatement zeta conceal cchar=ζ
+syntax keyword pyNiceStatement xi conceal cchar=ξ
+syntax keyword pyNiceStatement chi conceal cchar=χ
+syntax keyword pyNiceStatement psi conceal cchar=ψ
 
 syntax keyword pyNiceStatement None conceal cchar=∅
 
